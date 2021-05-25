@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Training</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+        <div class="prodDetail">
+            <fieldset id="mainPage" style="display: none;">
+                <legend>Product Info</legend>
+                <div class="container">
+                    <input type="text" id="prodName" placeholder="Enter the Product Name." required/><br>
+                    <input type="number" id="prodCost" placeholder="Enter cost per unit." required /><br>
+                    <input type="number" id="totalProd" placeholder="Enter the no. of products." required /><br>
+                    <p id="result"></p>
+                </div>
+            </fieldset>
+            <div class="con">
+                <table class="container2">
+                    <tr>
+                        <td colspan="2" style="width: 604px; height: 30px; padding-bottom: 0.5em;"><button id="addProd" onclick="showMain()">Add a New Product</button></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 302px; height: 30px; padding-bottom: 0.5em;"><button id="totalBill" onclick="calcBill()">Calculate Total</button></td>
+                        <td style="width: 302px; height: 30px; padding-bottom: 0.5em;"><button id="invoice" onclick="showBill()">Show Bill</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 604px; height: 30px; padding-bottom: 0.5em;"><button id="resetPage" onclick="resetAll()">Reset</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <table border="2px solid black" id="showBill" style="display: none">
+            <tr>
+                <td>Product Name</td>
+                <td>Cost Per unit</td>
+                <td>Total No. of Products</td>
+                <td>Amount (PKR)</td>
+            </tr>
+        </table>
+    <script src="work.js"></script>
+</body>
+</html>
